@@ -1,0 +1,54 @@
+\include{packagesClasses}
+\include{studentInfo}
+
+%% Helps generate the nomenclature
+\newcommand*{\glossaryname}{Nomenclature}
+\usepackage[nonumberlist,toc]{glossaries}
+\input{nomenclature}
+\makeglossaries
+
+\begin{document}
+
+
+  \uoittitlepage
+
+  \setcounter{secnumdepth}{3} \setcounter{tocdepth}{3}
+  \pagenumbering{roman} \setcounter{page}{1}
+  \doublespacing
+
+  \include{abstract}
+  \include{dedication}
+  \include{acknowledgements}
+
+  %%-----------Table of Contents----------------------
+  \renewcommand{\contentsname}{Table of Contents}
+  \tableofcontents{}
+  \addcontentsline{toc}{chapter}{Table of Contents}
+  %%------------List of Tables------------------------
+  \listoftables{}
+  \addcontentsline{toc}{chapter}{List of Tables}
+  %%------------List of Figures-----------------------
+  \listoffigures{}
+  \addcontentsline{toc}{chapter}{List of Figures}
+  \printglossary[style=list]
+
+  %%-------------Change single space to double space--
+  \newpage
+  \doublespacing
+  \pagenumbering{arabic} \setcounter{page}{1}
+
+  %%-------------Include your chapters----------------
+  %% You can rename the files.
+  \include{chapter1}
+  \include{chapter2}
+  \include{chapter3}
+  \include{chapter4}
+  \include{chapter5}
+  \include{chapter6}
+
+  \bibliographystyle{IEEEtran}
+  \bibliography{references}
+
+  \include{appendix}
+ 
+\end{document}
