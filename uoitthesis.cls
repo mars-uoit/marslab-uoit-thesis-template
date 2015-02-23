@@ -19,7 +19,7 @@
 \newcommand{\gaunote}{in}
 \newcommand{\acceptnote}{This thesis is accepted}
 \newcommand{\dean}{Dean of Graduate Studies}
-\newcommand{\school}{THE UNIVERSITY OF ONTARIO INSTITUTE OF TECHNOLOGY}
+\newcommand{\school}{UNIVERSITY OF ONTARIO INSTITUTE OF TECHNOLOGY}
 \newcommand{\abstracter}{\begin{flushleft} \huge{\textbf{Abstract}} \end{flushleft}}
 
 %
